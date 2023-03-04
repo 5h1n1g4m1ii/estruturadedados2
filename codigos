@@ -1,6 +1,35 @@
 //exerc. 348
 
+import java.util.Scanner;
 
+public class MyClass {
+    public static void main(String args[]) {
+        Scanner ler = new Scanner(System.in);
+      int L;
+      String nomes[5];
+      int pr1[5], pr2[5], media[5];
+       
+       for(L = O; L <= 4 ; L++){
+           
+           System.out.println("\ndigite "+ L + 1 +" nome:");
+		nomes = ler.nextString(L);
+		 System.out.println("digite 1 nota:");
+		pr1 = ler.nextInt(L);
+		 System.out.println("digite 2 nota:");
+		pr2 = ler.nextInt(L);
+           
+           media[L] =  (prl[L] + pr2[L])/2;
+           
+       }
+  
+      System.out.println("\n\n\n\t\t\t\tRELACAO FINAL\n");
+      for ( L = O; L <= 4 ; L++) {
+          
+           System.out.println("\n 8 "+ L+1+ "- "+ nomes[L]);
+            System.out.println("\n"+prl[L]+"\t"+ pr2 [L]+ "\t"+media[L]);
+      }
+    }
+}
 
 //exerc. 346
 
