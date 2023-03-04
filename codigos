@@ -37,7 +37,38 @@ public class MyClass {
 
 //exerc. 351
 
+import java.util.Scanner;
 
+public class MyClass {
+    public static void main(String args[]) {
+        Scanner ler = new Scanner(System.in);
+      
+      int L, num;
+      String nomes[5];
+      
+       for(L = O; L <= 4 ; L++){
+           
+              System.out.println("\nnome " + L + 1 +": "+ ler nomes[L]);
+           
+           System.out.println("Digite o numero da pessoa: ");
+		num = ler.nextInt();
+		 
+		 while((num < 1 || num > 5){
+		     
+		     System.out.println(" \n Numero fora do intervalo";);
+		     
+		     System.out.println("Digite o numero da pessoa: ");
+		     num = ler.nextInt()
+		 }
+		 
+		    System.out.println("\n"+ nomes[ num -1]);
+       }
+        
+    }
+    
+}
+  
+    
 
 //exerc. 356
 
