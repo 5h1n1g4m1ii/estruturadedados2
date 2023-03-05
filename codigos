@@ -276,4 +276,37 @@ System.out.println("\n");
 
 //exerc. 360
 
+import java.util.Scanner;
 
+public class MyClass {
+    public static void main(String args[]) {
+     
+     Scanner ler = new Scanner(System.in);
+
+int ultdia [12], data, i, dia, mes;
+String signo[12];
+
+for ( i= 0; i< 12; i++)
+{ System.out.println( "\ndigite signo:");
+signo= ler.nextString[i];
+System.out.println( "\ndigite ultimo dia:");
+ultdia = ler.nextInt[i];
+}
+System.out.println( "\ndigite data no formato ddmm ou 9999 para terminar:");
+data= ler.nextInt[];
+while( data < > 9999)
+{ dia = data div 100;
+mes = data % 100;
+mes--;
+if( dia > ultdia [mes] )
+{mes = (mes+ 1) %12; }
+System.out.println( "\nsigno: "+signo[mes]+ "\n");
+System.out.println( "\ndigite data no formato ddmm ou 9999 para terminar: ");
+data = ler.nextInt[];
+}
+System.out.println( "\n");
+
+    }
+ 
+                
+}
