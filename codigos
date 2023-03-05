@@ -182,11 +182,97 @@ public class MyClass {
 
 //exerc. 356
 
+import java.util.Scanner;
 
+public class MyClass {
+    public static void main(String args[]) {
+     
+     Scanner ler = new Scanner(System.in);
+        
+int L ,c ,t, media[15];
+String nomes[ 15] sit[15];
+double pr1[15], pr2[15];
+
+for( L= O; L <= 14 ; L++)
+{
+System.out.println("\n\nDigite ", L + 1, " nome:");
+nomes = ler.nextString(L);
+while( strtam(nomes[L]) >30)
+{ System.out.println( "\nNomes com ate 30 caracteres");
+System.out.println( "\n\nDigite ", L + 1 9" nome:");
+nomes = ler.nextString(L);
+}
+
+t=30-strtam (nomes[L]);
+for(c=1; c <= t; c++)
+{nomes[L]=strconcat(nomes[L]+ "");}
+System.out.println( "\ndigite 1 nota:");
+prl = ler.nextString(L);
+System.out.println("\ndigite 2 nota:");
+pr2 = ler.nextString(L);
+media[L] = realint((prl[L]+pr2[L])12+0.0001);
+if(media[L] >= 5 )
+{ sit[L  = "AP"; }
+else
+{ sit[L] = "RP"; }
+}
+
+System.out.println( "\n\n\n\t\t\t\tRELACAO FINAL\n";
+for( L= 0; L <= 14 ; L++)
+{ System.out.println("\n"L+1="-"+nomes[L]+"\t"+prl[L]+"\t"+pr2[L]"\t"+niedia[L]+"\t"+sit[L]); }
+
+System.out.println("\n");
+        
+    }
+ 
+                
+}
+           
 
 //exerc. 358
 
+import java.util.Scanner;
 
+public class MyClass {
+    public static void main(String args[]) {
+     
+     Scanner ler = new Scanner(System.in);
+        
+double precocompra[100] ,precovenda[100] ,lucro;
+int totlucromenor10,totlucromenor20,totlucromaior20, A;
+
+totiucromenorlø = 0;
+totlucromenor20 = 0;
+totlucromaior20 = 0;
+
+for(A = 0; A <>100; A++)
+{ System.out.println(" \nPreco de compra:"); 
+precoconipra = ler.nextString[A];
+System.out.println("\nPreco de venda: "); 
+precovenda = ler.nextString[A];
+}
+for(A=0;A < 100;A++)
+{
+lucro = precovenda[A] - precocompra[A]
+if(l ucro<10.0)
+{totl ucromenorlø+i-; }
+else
+{ if(lucro <= 20.0)
+{ totlucronienor20++; }
+else
+{ totlucromaior20++; }
+}
+}
+System.out.println("\ntotal de mercadorias com lucro < 10%: "+totlucromenor10); 
+System.out.println("\ntotal de mercadorias com 10% <= lucro <= 20%:" +totlucromenor20); 
+System.out.println(" \ntotal de mercadorias com lucro > 20%: "+totlucromaior20); 
+
+System.out.println("\n");
+        
+    }
+ 
+                
+}
 
 //exerc. 360
 
